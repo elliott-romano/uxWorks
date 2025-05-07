@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>elliott romano | product & graphic design</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <section class="intro">
+            <p>elliott romano is a graphic and product designer based in providence, rhode island. he is a graduate of rhode island school of design and works with clients in technology and cultural institutions.</p>
+            <button class="show-more-button">Show More</button>
+            <p class="hidden-content">
+                <span class="resume-section">Education</span><br>
+                Rhode Island School of Design<br>
+                BFA in Graphic Design, 2020<br><br>
+                
+                <span class="resume-section">Experience</span><br>
+                Senior Product Designer, TechCorp<br>
+                2022 - Present<br>
+                • Led UX research and design for enterprise software<br>
+                • Developed design system and component library<br>
+                • Managed team of 3 junior designers<br><br>
+                
+                Product Designer, DesignStudio<br>
+                2020 - 2022<br>
+                • Designed mobile applications for healthcare clients<br>
+                • Conducted user testing and implemented feedback<br>
+                • Created interactive prototypes and design documentation<br><br>
+                
+                <span class="resume-section">Skills</span><br>
+                • User Research & Testing<br>
+                • Interface Design<br>
+                • Prototyping<br>
+                • Design Systems<br>
+                • HTML/CSS
+            </p>
+        </section>
+
+        <section class="project">
+            <div class="project-header">
+                <p>Project name 01</p>
+                <p>2024.01</p>
+            </div>
+            <div class="project-content">
+                <video autoplay loop muted playsinline>
+                    <source src="media/reel.mp4" type="video/mp4">
+                </video>
+                <p>• Conducted user research with visually impaired users<br>
+                • Created detailed personas and journey maps<br>
+                • Developed accessibility guidelines and solutions<br>
+                • Implemented ARIA best practices in prototypes</p>
+                <a href="project1.html" style="color: white; text-decoration: none; display: inline-block; margin-top: 1rem; border: 1px solid white; padding: 0.5rem 1rem;">View Project Details →</a>
+            </div>
+        </section>
+
+        <section class="project">
+            <div class="project-header">
+                <p>Project name 02</p>
+                <p>2023.11</p>
+            </div>
+            <div class="project-content">
+                <img src="https://placehold.co/800x600/000000/FFFFFF/png?text=Financial+Dashboard" alt="Financial Dashboard Project">
+                <p>Redesign of a financial dashboard interface. Focused on improving data visualization and user task flows. Created high-fidelity prototypes and conducted usability testing.</p>
+            </div>
+        </section>
+
+        <section class="project">
+            <div class="project-header">
+                <p>Project name 03</p>
+                <p>2023.09</p>
+            </div>
+            <div class="project-content">
+                <img src="https://placehold.co/800x600/000000/FFFFFF/png?text=Healthcare+App" alt="Healthcare App Project">
+                <p>Development of an interactive prototype for a mobile healthcare application. Implemented user flows and micro-interactions using Figma and Principle.</p>
+            </div>
+        </section>
+
+        <footer>
+            <div id="time"></div>
+        </footer>
+    </main>
+    <script>
+        function updateTime() {
+            const now = new Date();
+            const timeString = now.toLocaleTimeString('en-US', { 
+                hour12: false,
+                hour: '2-digit',
+                minute: '2-digit',
+                second: '2-digit'
+            });
+            document.getElementById('time').textContent = timeString;
+        }
+        updateTime();
+        setInterval(updateTime, 1000);
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

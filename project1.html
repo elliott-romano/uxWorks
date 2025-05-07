@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessibility Research Project | elliott romano</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <section class="intro">
+            <a href="index.html" class="back-link">← back</a>
+            <h1>Accessibility Research Project</h1>
+            <p class="project-date">2024.01</p>
+        </section>
+
+        <section class="project">
+            <div class="project-header">
+                <p>Overview</p>
+            </div>
+            <div class="project-content">
+                <p>A comprehensive user research project focusing on improving digital accessibility for visually impaired users. This project involved extensive research, user interviews, and the development of practical solutions to enhance digital accessibility.</p>
+            </div>
+        </section>
+
+        <section class="project">
+            <div class="project-header">
+                <p>Research Process</p>
+            </div>
+            <div class="project-content">
+                <img src="https://placehold.co/800x600/000000/FFFFFF/png?text=Research+Process" alt="Research Process Diagram">
+                <p>• Conducted 15 in-depth interviews with visually impaired users<br>
+                • Analyzed current accessibility standards and guidelines<br>
+                • Created detailed user personas and journey maps<br>
+                • Identified key pain points in existing digital interfaces</p>
+            </div>
+        </section>
+
+        <section class="project">
+            <div class="project-header">
+                <p>Key Findings</p>
+            </div>
+            <div class="project-content">
+                <img src="https://placehold.co/800x600/000000/FFFFFF/png?text=Key+Findings" alt="Key Findings Visualization">
+                <p>• Navigation complexity was the primary pain point<br>
+                • Screen reader compatibility issues were widespread<br>
+                • Color contrast and text sizing needed improvement<br>
+                • Interactive elements often lacked proper ARIA labels</p>
+            </div>
+        </section>
+
+        <section class="project">
+            <div class="project-header">
+                <p>Solutions</p>
+            </div>
+            <div class="project-content">
+                <img src="https://placehold.co/800x600/000000/FFFFFF/png?text=Solutions" alt="Solution Prototypes">
+                <p>• Developed a simplified navigation system<br>
+                • Created comprehensive accessibility guidelines<br>
+                • Designed high-contrast interface components<br>
+                • Implemented ARIA best practices in prototypes</p>
+            </div>
+        </section>
+
+        <footer>
+            <div id="time"></div>
+        </footer>
+    </main>
+    <script>
+        function updateTime() {
+            const now = new Date();
+            const timeString = now.toLocaleTimeString('en-US', { 
+                hour12: false,
+                hour: '2-digit',
+                minute: '2-digit',
+                second: '2-digit'
+            });
+            document.getElementById('time').textContent = timeString;
+        }
+        updateTime();
+        setInterval(updateTime, 1000);
+    </script>
+</body>
+</html> 
