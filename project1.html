@@ -3,69 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accessibility Research Project | elliott romano</title>
+    <title>DigitalOcean New User Experience</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <main>
-        <section class="intro">
-            <a href="index.html" class="back-link">← back</a>
-            <h1>Accessibility Research Project</h1>
-            <p class="project-date">2024.01</p>
-        </section>
-
         <section class="project">
             <div class="project-header">
-                <p>Overview</p>
+                <a href="index.html" class="back-link">← Back to Projects</a>
+                <p class="project-date">2022</p>
             </div>
+            
             <div class="project-content">
-                <p>A comprehensive user research project focusing on improving digital accessibility for visually impaired users. This project involved extensive research, user interviews, and the development of practical solutions to enhance digital accessibility.</p>
+                <p>Senior Product Designer: Product Growth & Onboarding</p>
+                <p class="project-description">In 2020, DigitalOcean formed a new product working group that operated between the brand and product organizations, focused on improving the experience for new and evaluative developers. As the first dedicated designer, I led the strategy, research, and rollout of a new onboarding experience, ensuring a smoother path from first contact to product activation.</p>
+                
+                <video autoplay loop muted playsinline>
+                    <source src="media/reel.mp4" type="video/mp4">
+                </video>
+
+                <div class="project-details">
+                    <div class="project-intro-centered">
+                        Leading up to 2020, DigitalOcean experienced substantial growth, expanding its offerings beyond cloud servers to a broader suite of products designed for modern cloud development. However, its onboarding experience struggled to keep pace with this shift. 
+                    </div>
+                    <div class="project-section">
+                        <div class="section-title">Starting Point</div>
+                        <div class="section-content">
+                            The original user experience reflected DigitalOcean's legacy design: after entering payment details and verifying their email, users faced a lengthy evaluation form before creating a cloud server. This approach became misaligned as the platform's offerings expanded beyond virtual machines to diverse, workflow-specific products.
+                        </div>
+                        <div class="section-media">
+                            <video autoplay loop muted playsinline style="width:100%;border-radius:16px;">
+                                <source src="media/oldOnboarding.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                    <div class="project-section">
+                        <div class="section-title">Initial metrics</div>
+                        <div class="section-media">
+                            <img src="media/img/churn.png" alt="Initial metrics visualization">
+                        </div>
+                        <div class="section-content">
+                            <p>Data from the legacy experience revealed that most new DigitalOcean users had less than a year of development experience. Many would try cloud products but often abandoned them shortly after onboarding.</p>
+                        </div>
+                    </div>
+                    <div class="project-section">
+                        <div class="section-title">Research</div>
+                        <div class="section-content">
+                            <p>To understand this drop-off, I interviewed over 10 developers who stopped using DigitalOcean within their first month, all with less than a year of development experience, as well as university computer science students. Participants were surveyed on cloud knowledge and asked to navigate the platform from sign-up to evaluate its effectiveness.</p>
+
+                        
+                        </div>
+                        <div class="section-media">
+                            <img src="media/img/users.png" alt="Research visualization">
+                        </div>
+                    </div>
+                    <div class="project-intro-centered">
+                        <h2>Research Findings</h2>
+                        <p>Research findings indicated that users are primarily <strong>focused on learning programming rather than server or IT management</strong>. They often lack experience with deployment and Linux, <strong>relying heavily on documentation and trusted guidance</strong>  . Their main goal is to get their projects running in a shareable, browser-accessible state, recognizing that cloud knowledge is essential for success.</p>
+                    </div>
+        
+                <div style="padding: 32px; border-radius: 16px; text-align: center;">
+                    <video autoplay loop muted playsinline style="width: 100%; border-radius: 16px;">
+                        <source src="media/oldDroplet.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p class="caption">Legacy configuration experience</p>
+                </div>
+                <div class="project-section">
+                    <div class="section-title">Deployment Challenges</div>
+                    <div class="section-content">
+                        <p>The server deployment process assumed a high level of technical knowledge, leaving new users overwhelmed and unsure how to proceed. Many gave up when faced with unfamiliar steps and little guidance, leading to major drop-off during setup and access.</p>
+                        
+                    </div>
+                </div>
+                <div class="project-section">
+                    <div class="section-title">MVP Test</div>
+                    <div class="section-content">
+                        <p>The goal was clear: simplify onboarding by reducing decision-making, preconfiguring repetitive setup tasks, and offering clear guidance. Many new users were drawn to DigitalOcean for its community tutorials, relying on the platform's expertise to help them get started.</p>
+                    </div>
+                </div>
+            </div>
             </div>
         </section>
-
-        <section class="project">
-            <div class="project-header">
-                <p>Research Process</p>
-            </div>
-            <div class="project-content">
-                <img src="https://placehold.co/800x600/000000/FFFFFF/png?text=Research+Process" alt="Research Process Diagram">
-                <p>• Conducted 15 in-depth interviews with visually impaired users<br>
-                • Analyzed current accessibility standards and guidelines<br>
-                • Created detailed user personas and journey maps<br>
-                • Identified key pain points in existing digital interfaces</p>
-            </div>
-        </section>
-
-        <section class="project">
-            <div class="project-header">
-                <p>Key Findings</p>
-            </div>
-            <div class="project-content">
-                <img src="https://placehold.co/800x600/000000/FFFFFF/png?text=Key+Findings" alt="Key Findings Visualization">
-                <p>• Navigation complexity was the primary pain point<br>
-                • Screen reader compatibility issues were widespread<br>
-                • Color contrast and text sizing needed improvement<br>
-                • Interactive elements often lacked proper ARIA labels</p>
-            </div>
-        </section>
-
-        <section class="project">
-            <div class="project-header">
-                <p>Solutions</p>
-            </div>
-            <div class="project-content">
-                <img src="https://placehold.co/800x600/000000/FFFFFF/png?text=Solutions" alt="Solution Prototypes">
-                <p>• Developed a simplified navigation system<br>
-                • Created comprehensive accessibility guidelines<br>
-                • Designed high-contrast interface components<br>
-                • Implemented ARIA best practices in prototypes</p>
-            </div>
-        </section>
-
-        <footer>
-            <div id="time"></div>
-        </footer>
     </main>
+    <footer>
+        <div id="time"></div>
+    </footer>
     <script>
         function updateTime() {
             const now = new Date();

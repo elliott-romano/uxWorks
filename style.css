@@ -81,6 +81,7 @@ main {
 .project-header p {
     font-size: 1rem;
     color: #666;
+    margin-bottom: 16px;;
 }
 
 .project-content {
@@ -94,9 +95,50 @@ main {
     margin-bottom: 2rem;
 }
 
-.project-content p {
-    font-size: 1rem;
+.project-content video {
+    width: 100%;
+    height: auto;
+    margin-bottom: 2rem;
+    max-width: 100%;
+    border-radius: 16px;
+}
+
+.project-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.project-description {
+    color: rgb(255, 255, 255);
+    font-size: 36px;
+    margin-bottom: 2rem;
+    line-height: 1.2;
+    max-width: 70%;
+    font-weight: 400;
+    text-align: left;
+    margin-top: 2rem;
+}
+
+.project-details {
+    margin-top: 3rem;
+}
+
+.project-details h2 {
+    font-size: 1.5rem;
+    color: white;
+    margin: 2rem 0 1rem 0;
+}
+
+.project-details p {
+    font-size: 1.1rem;
+    line-height: 1.6;
     color: #ccc;
+    margin-bottom: 1.5rem;
+}
+
+.project-details h2:first-child {
+    margin-top: 0;
 }
 
 /* Footer */
@@ -140,6 +182,11 @@ footer {
 
     .project-header h2 {
         font-size: 1.2rem;
+    }
+
+    .project-description {
+        max-width: 100%;
+        font-size: 22px;
     }
 }
 
@@ -315,4 +362,52 @@ footer {
     color: #666;
     font-size: 1rem;
     margin-top: 0.5rem;
+}
+
+.project-section {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 380px;
+    align-items: flex-start;
+}
+.section-content {
+    flex: 1;
+    color: #ccc;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+.section-media {
+    flex: 1;
+    display: flex;
+    align-items: flex-start;
+    background-color: white;
+}
+.section-media video {
+    width: 100%;
+    border-radius: 16px;
+}
+@media (max-width: 700px) {
+    .project-section {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    .section-media {
+        margin-top: 1rem;
+    }
+}
+
+.project-intro-centered {
+    text-align: center;
+    color: #fff;
+    font-size: 1.5rem;
+    max-width: 800px;
+    margin: 200px auto 200px auto;
+    line-height: 1.4;
+    font-weight: 400;
+}
+
+.caption {
+    font-size: 12px !important;
+    color: #ccc !important;
+    margin-top: 8px !important;
 }
